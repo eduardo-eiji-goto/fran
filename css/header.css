@@ -1,0 +1,68 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background-color: var(--color-primary);
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .header__logo > svg {
+    height: 1.6rem;
+    color: var(--color-base);
+  }
+
+  #menu__toggle {
+    display: none;
+  }
+
+  #menu__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 1.6rem;
+    aspect-ratio: 1/1;
+
+    cursor: pointer;
+  }
+
+  #menu__hamburger:hover {
+    background: var(--color-accent);
+  }
+
+  .hamburger-line {
+    display: block;
+
+    height: 16%;
+    background: var(--color-base);
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.open {
+    display: block;
+    position: absolute;
+
+    top: 100%;
+    min-height: 100dvh;
+    width: 100%;
+    background: var(--color-ebony--dark);
+  }
+
+  nav a {
+    display: block;
+
+    width: 100%;
+    padding: 1rem;
+    color: var(--color-base);
+  }
+}

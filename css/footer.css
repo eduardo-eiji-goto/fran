@@ -1,0 +1,28 @@
+footer {
+  display: grid;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background: var(--color-primary);
+  color: var(--color-base);
+
+  nav {
+    display: flex;
+    gap: 1rem;
+
+    place-self: center;
+  }
+
+  a {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    width: fit-content;
+    font-weight: 500;
+  }
+
+  a > svg {
+    height: 2rem;
+  }
+}
