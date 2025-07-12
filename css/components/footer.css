@@ -1,17 +1,24 @@
 footer {
+  --color-background: var(--color-ebony);
+  --color-text: var(--color-white);
+  --height: 1.6rem;
+
+  position: relative;
+  z-index: 999;
+
+  background: var(--color-background);
+  color: var(--color-text);
+
   display: grid;
 
   padding-top: 1em;
   padding-bottom: 1em;
 
-  background: var(--color-primary);
-  color: var(--color-base);
-
   nav {
     display: flex;
     gap: 1rem;
 
-    place-self: center;
+    place-content: center;
   }
 
   a {
